@@ -1,0 +1,135 @@
+{
+  "project_name": "St. Anthony Catholic Church AIT Alagbado",
+  "design_philosophy": {
+    "identity": "The Sacred Portal",
+    "core_values": ["Reverence", "Tradition", "Community", "Sacred Beauty"],
+    "archetype": "Jewel & Luxury (Sacred Variant)",
+    "vibe": "Cinematic, Holy, Welcoming, Timeless"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Cinzel, serif",
+      "subheading": "Playfair Display, serif",
+      "body": "DM Sans, sans-serif",
+      "accent": "Cormorant Garamond, serif"
+    },
+    "installation_guide": [
+      "Import from Google Fonts: @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');"
+    ],
+    "usage_rules": {
+      "h1": "Cinzel, font-bold, tracking-tight, uppercase (sacred authority)",
+      "h2": "Playfair Display, font-semibold, tracking-normal (welcoming elegance)",
+      "body": "DM Sans, font-normal, relaxed leading (clarity)",
+      "caption": "Cormorant Garamond, italic, tracking-wide (liturgical notes)"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Martyr's Crimson",
+        "value": "#721121",
+        "tailwind_var": "--primary",
+        "usage": "Primary CTAs, Liturgical highlights, Important borders"
+      },
+      "secondary": {
+        "name": "Divine Gold",
+        "value": "#C5A059",
+        "tailwind_var": "--secondary",
+        "usage": "Icons, Halos, Accents, Divider lines"
+      },
+      "background": {
+        "light": "#FDFCF8",
+        "dark": "#1A1617",
+        "description": "Warm Alabaster (Light) and Warm Charcoal (Dark)"
+      },
+      "surface": {
+        "light": "#F7F5F0",
+        "dark": "#242021",
+        "description": "Slightly darker/lighter than bg for cards"
+      },
+      "text": {
+        "light": "#2D2A2B",
+        "dark": "#E6E1E1"
+      },
+      "accent_blue": {
+        "name": "Marian Blue",
+        "value": "#4A5D75",
+        "usage": "Subtle backgrounds, secondary buttons"
+      }
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "church-red": "#721121",
+        "church-gold": "#C5A059",
+        "church-gold-light": "#E5C585",
+        "marian-blue": "#4A5D75",
+        "stone-50": "#FDFCF8",
+        "stone-100": "#F7F5F0",
+        "stone-900": "#1A1617"
+      }
+    }
+  },
+  "layout_strategies": {
+    "public_pages": {
+      "grid_mode": "Mode A: The Tetris Grid",
+      "spacing": "Generous (p-8 to p-24)",
+      "alignment": "Center for Hero/Sacred titles, Left for reading content",
+      "containers": "Max width 1400px, but allow full-width image breaks"
+    },
+    "admin_dashboard": {
+      "grid_mode": "Mode B: High Density",
+      "spacing": "Compact (p-4, gap-4)",
+      "style": "Clean, functional, sidebar navigation"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-church-red text-white hover:bg-red-900 rounded-sm uppercase tracking-widest font-cinzel text-sm px-8 py-3 transition-transform hover:-translate-y-1 shadow-lg",
+      "secondary": "border border-church-gold text-church-red hover:bg-church-gold/10 rounded-sm uppercase tracking-widest font-cinzel text-sm px-8 py-3"
+    },
+    "cards": {
+      "style": "bg-white/50 backdrop-blur-sm border border-stone-200/60 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg overflow-hidden",
+      "liturgical": "border-l-4 border-church-red pl-6 py-4 bg-stone-50"
+    },
+    "navigation": {
+      "style": "Sticky, Glassmorphism (Crystal Glass), border-b border-white/20 backdrop-blur-xl"
+    },
+    "inputs": {
+      "style": "bg-white/80 border-stone-200 focus:border-church-gold focus:ring-1 focus:ring-church-gold rounded-md"
+    }
+  },
+  "image_assets": {
+    "hero_bg": "https://images.unsplash.com/photo-1693854448297-29a0f9a3ac9a",
+    "exterior": "https://images.unsplash.com/photo-1721884257519-31a3d7c2d825",
+    "priest_mass": "https://images.unsplash.com/photo-1773372546055-cb3f09995376",
+    "candles": "https://images.unsplash.com/photo-1765146567664-cf0c0d987da9",
+    "stained_glass": "https://images.unsplash.com/photo-1772915022580-01ac48b622a2",
+    "placeholder_map": "https://images.unsplash.com/photo-1524661135-423995f22d0b"
+  },
+  "universal_guidelines": {
+    "do_not": [
+      "Use robotic emojis (🤖, 🚀, ⚡)",
+      "Use pure black (#000000) or pure white (#FFFFFF)",
+      "Use 'Inter' font for headings",
+      "Center align long paragraphs",
+      "Use 'transition: all'"
+    ],
+    "must_do": [
+      "Use 'sonner' for toasts",
+      "Add 'data-testid' to all interactive elements",
+      "Use 'lucide-react' for icons",
+      "Maintain 4.5:1 contrast ratio",
+      "Mobile-first responsive design",
+      "Use detailed textures (grain, noise) in backgrounds to avoid digital flatness"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react', 'clsx', 'tailwind-merge', 'sonner' immediately.",
+    "Update tailwind.config.js with the custom colors defined above.",
+    "Add the Google Fonts import to index.css.",
+    "Create a 'Layout' component that handles the Navbar and Footer globally.",
+    "Ensure the Admin Panel is protected by a Layout that checks for JWT.",
+    "For the Gallery, use a Masonry layout (Tetris Grid) instead of equal squares.",
+    "For Sermons, create a video player wrapper that looks like a cinema frame."
+  ]
+}
