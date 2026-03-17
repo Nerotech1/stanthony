@@ -1,0 +1,588 @@
+{
+  "summary": {
+    "tests_run": 25,
+    "tests_passed": 25,
+    "success_rate": 100.0,
+    "timestamp": "2026-03-17T10:07:44.521377"
+  },
+  "results": {
+    "Seed Sample Data": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "message": "Data already seeded"
+      }
+    },
+    "Get Settings": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "church_name": "St. Anthony Catholic Church - Updated",
+        "tagline": "AIT Alagbado, Lagos State",
+        "address": "AIT Road, Alagbado, Lagos State, Nigeria",
+        "phone": "+234 800 000 0000",
+        "email": "info@stanthonychurch.org",
+        "mass_times": [
+          {
+            "day": "Sunday",
+            "time": "6:30 AM",
+            "type": "First Mass"
+          },
+          {
+            "day": "Sunday",
+            "time": "8:00 AM",
+            "type": "Second Mass"
+          },
+          {
+            "day": "Sunday",
+            "time": "10:00 AM",
+            "type": "High Mass"
+          },
+          {
+            "day": "Monday - Friday",
+            "time": "6:30 AM",
+            "type": "Weekday Mass"
+          },
+          {
+            "day": "Saturday",
+            "time": "7:00 AM",
+            "type": "Saturday Mass"
+          }
+        ],
+        "confession_times": [
+          {
+            "day": "Saturday",
+            "time": "5:00 PM - 6:00 PM"
+          },
+          {
+            "day": "Sunday",
+            "time": "Before each Mass"
+          }
+        ],
+        "logo_url": "",
+        "hero_image_url": "https://images.unsplash.com/photo-1693854448297-29a0f9a3ac9a",
+        "meta_title": "St. Anthony Catholic Church - AIT Alagbado, Lagos",
+        "meta_description": "Welcome to St. Anthony Catholic Church, AIT Alagbado, Lagos State. Join us for Holy Mass, Sacraments, and community fellowship.",
+        "social_links": {
+          "facebook": "#",
+          "instagram": "#",
+          "youtube": "#"
+        },
+        "map_coordinates": {
+          "lat": 6.6656,
+          "lng": 3.2908
+        },
+        "id": "main",
+        "seeded": true,
+        "updated_at": "2026-03-17T10:06:34.329229+00:00"
+      }
+    },
+    "Get Announcements": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "e68fcd95-3fb9-4750-8982-602bac1c9c75",
+          "title": "Parish Feast Day Celebration",
+          "content": "Join us on June 13th as we celebrate the Feast of St. Anthony of Padua, our patron saint. Special Mass at 10:00 AM followed by parish festivities.",
+          "is_active": true,
+          "priority": 2,
+          "created_at": "2026-03-17T10:02:28.750824+00:00"
+        },
+        {
+          "id": "69762392-6b3b-4f92-90f6-8f0f02886f06",
+          "title": "First Holy Communion Registration",
+          "content": "Registration for First Holy Communion classes is now open. Please contact the parish office for more information.",
+          "is_active": true,
+          "priority": 1,
+          "created_at": "2026-03-17T10:02:28.750842+00:00"
+        },
+        {
+          "id": "31fbeafe-3805-4952-a016-4251ddcae6d4",
+          "title": "Test Announcement",
+          "content": "This is a test announcement",
+          "is_active": true,
+          "priority": 1,
+          "created_at": "2026-03-17T10:06:34.672734+00:00"
+        }
+      ]
+    },
+    "Get Sermons": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "e5fd4ccd-28aa-4023-9395-93d712642efb",
+          "title": "Test Sermon",
+          "description": "This is a test sermon",
+          "preacher": "Fr. Test",
+          "date": "2024-02-15",
+          "video_url": "https://www.youtube.com/watch?v=test",
+          "video_type": "youtube",
+          "thumbnail_url": "",
+          "is_published": true,
+          "created_at": "2026-03-17T10:06:34.427986+00:00"
+        },
+        {
+          "id": "ee0f10b0-b481-4e36-a61d-d3eea885f69c",
+          "title": "The Power of Faith",
+          "description": "A reflection on how faith can move mountains and transform our daily lives.",
+          "preacher": "Fr. Michael Okonkwo",
+          "date": "2024-01-14",
+          "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "video_type": "youtube",
+          "thumbnail_url": "",
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.762658+00:00"
+        },
+        {
+          "id": "a4f461a3-2d08-4344-bd32-3532968835b1",
+          "title": "Living the Beatitudes",
+          "description": "Understanding and applying the Beatitudes in our modern world.",
+          "preacher": "Fr. Emmanuel Adeyemi",
+          "date": "2024-01-07",
+          "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "video_type": "youtube",
+          "thumbnail_url": "",
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.762672+00:00"
+        }
+      ]
+    },
+    "Get Events": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "2df53961-4e2c-4230-bd08-601add7e9d0c",
+          "title": "Youth Ministry Meeting",
+          "description": "Monthly gathering for our young parishioners. Games, discussions, and fellowship.",
+          "date": "2024-02-10",
+          "time": "4:00 PM",
+          "location": "Youth Center",
+          "image_url": "",
+          "is_featured": false,
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.775280+00:00"
+        },
+        {
+          "id": "2af5759a-d6ad-4667-91db-01a6bcaded65",
+          "title": "Parish Retreat",
+          "description": "Annual parish retreat focusing on deepening our relationship with God. All parishioners are welcome.",
+          "date": "2024-02-15",
+          "time": "9:00 AM - 4:00 PM",
+          "location": "Parish Hall",
+          "image_url": "https://images.unsplash.com/photo-1693854448297-29a0f9a3ac9a",
+          "is_featured": true,
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.775262+00:00"
+        },
+        {
+          "id": "71181f01-4cc6-4349-8b9e-2f7e30086c31",
+          "title": "Test Event",
+          "description": "This is a test event",
+          "date": "2024-03-15",
+          "time": "10:00 AM",
+          "location": "Parish Hall",
+          "image_url": "",
+          "is_featured": true,
+          "is_published": true,
+          "created_at": "2026-03-17T10:06:34.544521+00:00"
+        }
+      ]
+    },
+    "Get Gallery": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "83778ddd-c3ae-4248-8d86-aecb1196e3e2",
+          "title": "Test Image",
+          "description": "This is a test image",
+          "image_url": "https://example.com/test.jpg",
+          "category": "Test",
+          "order": 0,
+          "is_published": true,
+          "created_at": "2026-03-17T10:06:34.884592+00:00"
+        },
+        {
+          "id": "b119f7cd-179d-4302-b48b-3142317d2a84",
+          "title": "Church Interior",
+          "description": "The beautiful interior of our church",
+          "image_url": "https://images.unsplash.com/photo-1693854448297-29a0f9a3ac9a",
+          "category": "Church",
+          "order": 1,
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.801637+00:00"
+        },
+        {
+          "id": "1084fb19-e063-4848-a73a-9356fd8c289e",
+          "title": "Stained Glass Window",
+          "description": "Our beautiful stained glass depicting the Holy Family",
+          "image_url": "https://images.unsplash.com/photo-1772915022580-01ac48b622a2",
+          "category": "Art",
+          "order": 2,
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.801654+00:00"
+        },
+        {
+          "id": "84ac9512-c73a-4756-9c82-0eb4f24bdd0f",
+          "title": "Prayer Candles",
+          "description": "Votive candles in our Lady's chapel",
+          "image_url": "https://images.unsplash.com/photo-1765146567664-cf0c0d987da9",
+          "category": "Church",
+          "order": 3,
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.801660+00:00"
+        },
+        {
+          "id": "9b6cf495-ef1a-41e3-a8cb-404d7c949f5f",
+          "title": "Church Exterior",
+          "description": "View of our church building",
+          "image_url": "https://images.unsplash.com/photo-1721884257519-31a3d7c2d825",
+          "category": "Church",
+          "order": 4,
+          "is_published": true,
+          "created_at": "2026-03-17T10:02:28.801665+00:00"
+        }
+      ]
+    },
+    "Get Gallery Categories": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        "Art",
+        "Church",
+        "Test"
+      ]
+    },
+    "Get Clergy": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "825f611e-1b52-44e8-b35f-b74473886a4d",
+          "name": "Rev. Fr. Michael Okonkwo",
+          "title": "Parish Priest",
+          "bio": "Fr. Michael has served our parish for over 10 years, guiding our community with wisdom and compassion. He was ordained in 2005 and has a deep devotion to the Sacred Heart of Jesus.",
+          "image_url": "https://images.unsplash.com/photo-1773372546055-cb3f09995376",
+          "order": 1,
+          "is_active": true
+        },
+        {
+          "id": "69885449-424a-45cb-be86-48a47ba4bf39",
+          "name": "Rev. Fr. Emmanuel Adeyemi",
+          "title": "Assistant Parish Priest",
+          "bio": "Fr. Emmanuel joined our parish in 2020. He is passionate about youth ministry and coordinates our catechism programs.",
+          "image_url": "",
+          "order": 2,
+          "is_active": true
+        },
+        {
+          "id": "bfe78793-9d11-4b74-baa7-168b9c1f0806",
+          "name": "Fr. Test Priest",
+          "title": "Test Priest",
+          "bio": "This is a test priest biography",
+          "image_url": "",
+          "order": 10,
+          "is_active": true
+        }
+      ]
+    },
+    "Get Pages": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "79ff62c9-a64f-4e1f-a835-05eb05774f35",
+          "page_slug": "about",
+          "title": "About Our Parish",
+          "content": "<h2>Our History</h2>\n<p>St. Anthony Catholic Church was established in 1985 to serve the growing Catholic community in AIT Alagbado, Lagos State. What began as a small mission with just a handful of faithful has grown into a vibrant parish community of over 2,000 families.</p>\n\n<h2>Our Mission</h2>\n<p>We are committed to spreading the Gospel of Jesus Christ, celebrating the Sacraments, and serving our community with love and compassion. Our parish is a welcoming home for all who seek to grow in faith.</p>\n\n<h2>Our Beliefs</h2>\n<p>As a Roman Catholic parish, we hold fast to the teachings of the Church, guided by Sacred Scripture and Sacred Tradition. We believe in the Real Presence of Christ in the Eucharist, the intercession of the Blessed Virgin Mary and the Saints, and the authority of the Pope and Magisterium.</p>",
+          "sections": [],
+          "is_active": true,
+          "updated_at": "2026-03-17T10:02:28.813756+00:00"
+        },
+        {
+          "id": "dd61bb82-d29e-4478-9f27-ce1ad56902f8",
+          "page_slug": "sacraments",
+          "title": "Mass & Sacraments",
+          "content": "<h2>Holy Mass</h2>\n<p>The Holy Sacrifice of the Mass is the source and summit of our faith. We celebrate Mass daily, with special solemnity on Sundays and Holy Days of Obligation.</p>\n\n<h2>Confession</h2>\n<p>The Sacrament of Reconciliation is available on Saturdays from 5:00 PM to 6:00 PM, and by appointment. Prepare your heart to receive God's mercy.</p>\n\n<h2>Baptism</h2>\n<p>Baptisms are celebrated on the first Sunday of each month after the 10:00 AM Mass. Parents must attend a preparation class. Contact the parish office to register.</p>\n\n<h2>Marriage</h2>\n<p>Couples planning to marry should contact the parish at least six months in advance. Pre-marriage preparation is required.</p>\n\n<h2>Anointing of the Sick</h2>\n<p>For the seriously ill or elderly, please contact the parish office to arrange for a priest visit and anointing.</p>",
+          "sections": [],
+          "is_active": true,
+          "updated_at": "2026-03-17T10:02:28.813773+00:00"
+        }
+      ]
+    },
+    "Get About Page": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "id": "79ff62c9-a64f-4e1f-a835-05eb05774f35",
+        "page_slug": "about",
+        "title": "About Our Parish",
+        "content": "<h2>Our History</h2>\n<p>St. Anthony Catholic Church was established in 1985 to serve the growing Catholic community in AIT Alagbado, Lagos State. What began as a small mission with just a handful of faithful has grown into a vibrant parish community of over 2,000 families.</p>\n\n<h2>Our Mission</h2>\n<p>We are committed to spreading the Gospel of Jesus Christ, celebrating the Sacraments, and serving our community with love and compassion. Our parish is a welcoming home for all who seek to grow in faith.</p>\n\n<h2>Our Beliefs</h2>\n<p>As a Roman Catholic parish, we hold fast to the teachings of the Church, guided by Sacred Scripture and Sacred Tradition. We believe in the Real Presence of Christ in the Eucharist, the intercession of the Blessed Virgin Mary and the Saints, and the authority of the Pope and Magisterium.</p>",
+        "sections": [],
+        "is_active": true,
+        "updated_at": "2026-03-17T10:02:28.813756+00:00"
+      }
+    },
+    "Submit Contact Message": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "message": "Message sent successfully",
+        "id": "a32b47d2-03e4-4186-8105-b892f57439ea"
+      }
+    },
+    "Admin Registration": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMzMyYzUzZmMtOWQ2Yi00ODY1LTk5ZTktMTI5ODhkMzZhMzJjIiwiZW1haWwiOiJ0ZXN0YWRtaW5fMTAwNzQxQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczODI4NDYyfQ.8khIxGpfYh8KEePxqsl_12o66MFLV6iQAkeU-WkqS0Q",
+        "token_type": "bearer",
+        "user": {
+          "id": "332c53fc-9d6b-4865-99e9-12988d36a32c",
+          "email": "testadmin_100741@example.com",
+          "name": "Test Admin",
+          "role": "admin"
+        }
+      }
+    },
+    "Admin Login": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMzMyYzUzZmMtOWQ2Yi00ODY1LTk5ZTktMTI5ODhkMzZhMzJjIiwiZW1haWwiOiJ0ZXN0YWRtaW5fMTAwNzQxQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczODI4NDYyfQ.8khIxGpfYh8KEePxqsl_12o66MFLV6iQAkeU-WkqS0Q",
+        "token_type": "bearer",
+        "user": {
+          "id": "332c53fc-9d6b-4865-99e9-12988d36a32c",
+          "email": "testadmin_100741@example.com",
+          "name": "Test Admin",
+          "role": "admin"
+        }
+      }
+    },
+    "Get Current User": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "id": "332c53fc-9d6b-4865-99e9-12988d36a32c",
+        "email": "testadmin_100741@example.com",
+        "name": "Test Admin",
+        "role": "admin"
+      }
+    },
+    "Get Admin Stats": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "messages": {
+          "total": 2,
+          "unread": 2
+        },
+        "sermons": 3,
+        "events": 3,
+        "gallery": 5,
+        "donations": {
+          "count": 0,
+          "total": 0
+        }
+      }
+    },
+    "Get Messages (Admin)": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "a32b47d2-03e4-4186-8105-b892f57439ea",
+          "name": "Test User",
+          "email": "test@example.com",
+          "subject": "Test Message",
+          "message": "This is a test message from the automated test suite.",
+          "is_read": false,
+          "created_at": "2026-03-17T10:07:41.756601+00:00"
+        },
+        {
+          "id": "cdfd0c95-e73b-49ac-89e9-8812872d22a9",
+          "name": "Test User",
+          "email": "test@example.com",
+          "subject": "Test Message",
+          "message": "This is a test message from the automated test suite.",
+          "is_read": false,
+          "created_at": "2026-03-17T10:06:33.113396+00:00"
+        }
+      ]
+    },
+    "Get Donations (Admin)": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": [
+        {
+          "id": "e58535a1-5117-4ac7-b3b7-def87a377aed",
+          "session_id": "cs_test_a1XwtVn3KFbBy1nb2OIohSVcPX2z3JYJNqMulmw19zTAo4vkyQX91HgTuw",
+          "amount": 25.0,
+          "currency": "usd",
+          "donor_name": "Test Donor",
+          "donor_email": "donor@example.com",
+          "message": "Test donation",
+          "payment_status": "unpaid",
+          "created_at": "2026-03-17T10:06:35.737108+00:00",
+          "status": "open"
+        }
+      ]
+    },
+    "Update Settings": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "church_name": "St. Anthony Catholic Church - Updated",
+        "tagline": "AIT Alagbado, Lagos State",
+        "address": "AIT Road, Alagbado, Lagos State, Nigeria",
+        "phone": "+234 800 000 0000",
+        "email": "info@stanthonychurch.org",
+        "mass_times": [
+          {
+            "day": "Sunday",
+            "time": "6:30 AM",
+            "type": "First Mass"
+          },
+          {
+            "day": "Sunday",
+            "time": "8:00 AM",
+            "type": "Second Mass"
+          },
+          {
+            "day": "Sunday",
+            "time": "10:00 AM",
+            "type": "High Mass"
+          },
+          {
+            "day": "Monday - Friday",
+            "time": "6:30 AM",
+            "type": "Weekday Mass"
+          },
+          {
+            "day": "Saturday",
+            "time": "7:00 AM",
+            "type": "Saturday Mass"
+          }
+        ],
+        "confession_times": [
+          {
+            "day": "Saturday",
+            "time": "5:00 PM - 6:00 PM"
+          },
+          {
+            "day": "Sunday",
+            "time": "Before each Mass"
+          }
+        ],
+        "logo_url": "",
+        "hero_image_url": "https://images.unsplash.com/photo-1693854448297-29a0f9a3ac9a",
+        "meta_title": "St. Anthony Catholic Church - AIT Alagbado, Lagos",
+        "meta_description": "Welcome to St. Anthony Catholic Church, AIT Alagbado, Lagos State. Join us for Holy Mass, Sacraments, and community fellowship.",
+        "social_links": {
+          "facebook": "#",
+          "instagram": "#",
+          "youtube": "#"
+        },
+        "map_coordinates": {
+          "lat": 6.6656,
+          "lng": 3.2908
+        },
+        "id": "main",
+        "seeded": true,
+        "updated_at": "2026-03-17T10:07:42.975465+00:00"
+      }
+    },
+    "Create Sermon": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "id": "6f3434b6-0178-4ffa-a75a-0a06176d6276",
+        "title": "Test Sermon",
+        "description": "This is a test sermon",
+        "preacher": "Fr. Test",
+        "date": "2024-02-15",
+        "video_url": "https://www.youtube.com/watch?v=test",
+        "video_type": "youtube",
+        "thumbnail_url": "",
+        "is_published": true,
+        "created_at": "2026-03-17T10:07:43.078826+00:00"
+      }
+    },
+    "Create Event": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "id": "cb633a96-0ec5-4355-9bc3-e1f8b55a57ac",
+        "title": "Test Event",
+        "description": "This is a test event",
+        "date": "2024-03-15",
+        "time": "10:00 AM",
+        "location": "Parish Hall",
+        "image_url": "",
+        "is_featured": true,
+        "is_published": true,
+        "created_at": "2026-03-17T10:07:43.182802+00:00"
+      }
+    },
+    "Create Announcement": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "id": "d1e63de3-a170-412e-b5cd-c22476c6d104",
+        "title": "Test Announcement",
+        "content": "This is a test announcement",
+        "is_active": true,
+        "priority": 1,
+        "created_at": "2026-03-17T10:07:43.291939+00:00"
+      }
+    },
+    "Create Clergy": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "id": "67e447b0-4788-4f07-8c81-6b2a1d294bf7",
+        "name": "Fr. Test Priest",
+        "title": "Test Priest",
+        "bio": "This is a test priest biography",
+        "image_url": "",
+        "order": 10,
+        "is_active": true
+      }
+    },
+    "Create Gallery Image": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "id": "4c80d359-c582-4227-9b03-e0b62beb06c3",
+        "title": "Test Image",
+        "description": "This is a test image",
+        "image_url": "https://example.com/test.jpg",
+        "category": "Test",
+        "order": 0,
+        "is_published": true,
+        "created_at": "2026-03-17T10:07:43.501123+00:00"
+      }
+    },
+    "Create Donation Checkout": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "url": "https://checkout.stripe.com/c/pay/cs_test_a1liHbYznZ7kdvpa9AVmNhMs6JxlrHy6uLy8Fk9ahHeYNZY57rbtKCjCOq#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWjA0V2xNTENDfzdyMWhcSU5%2Fam5DVlBQfVF3ZHN%2FSWl1NG1fcUFid3BpN01sfHcwVzJfRmhrfURAaD1PQjd9cEM8TEQzaU0yTXNcb3BrY3U2PH9GUXRQVmNINTVJbHREckN3NCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl",
+        "session_id": "cs_test_a1liHbYznZ7kdvpa9AVmNhMs6JxlrHy6uLy8Fk9ahHeYNZY57rbtKCjCOq"
+      }
+    },
+    "Get Donation Status": {
+      "status": "PASS",
+      "status_code": 200,
+      "response": {
+        "status": "open",
+        "payment_status": "unpaid",
+        "amount_total": 2500,
+        "currency": "usd"
+      }
+    }
+  }
+}
